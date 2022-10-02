@@ -1,0 +1,14 @@
+
+            int sayi1, kalan;
+            string deger = "";
+            Console.Write("Sayıyı giriniz: ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            while (sayi1 != 0)
+            {
+                kalan = sayi1 % 2;
+                sayi1 = sayi1 / 2;
+
+                deger = kalan.ToString() + deger;
+            }
+            Console.WriteLine("2'lik sistemde karşılığı : {0}", deger);
+            Console.ReadKey();
